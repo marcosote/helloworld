@@ -5,6 +5,9 @@
 void free_matrix(int n, int m, int ** matrix){
 	int i;
 	free(matrix);
+	for(i=0;i<n;i++){
+		free(matrix[i])
+	}
 
 }
 
